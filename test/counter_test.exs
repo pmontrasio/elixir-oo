@@ -3,7 +3,7 @@ defmodule CounterTest do
   doctest Counter
 
   setup context do
-    {:ok, counter} = Counter.start_link(context.test)
+    {:ok, counter} = Counter.start_link(0, [name: :test])
     {:ok, counter: counter}
   end
 

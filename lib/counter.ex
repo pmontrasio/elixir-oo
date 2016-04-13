@@ -2,10 +2,10 @@ defmodule Counter do
   use GenServer
 
   # initialize
-  def start_link(name) do
+  def start_link(counter, opts \\ []) do
     # We use __MODULE__ for the same reason we use self in "def self.class_method" in Ruby
-    # We set the initial state at 0
-    GenServer.start_link(__MODULE__, 0, name: name)
+    # We set the initial state at counter
+    GenServer.start_link(__MODULE__, counter, opts)
     # It returns {:ok, pid}
   end
 
