@@ -2,15 +2,19 @@ defmodule Counter do
   use GenServer
 
   # initialize
-  def start_link() do
+  def start_link(name) do
     # We use __MODULE__ for the same reason we use self in "def self.class_method" in Ruby
     # We set the initial state at 0
-    GenServer.start_link(__MODULE__, 0)
+    GenServer.start_link(__MODULE__, 0, name: name)
     # It returns {:ok, pid}
   end
 
   def inc(pid) do
     GenServer.cast(pid, :inc)
+  end
+
+  def dec(pid) do
+    GenServer.cast(pid, :dec) # this will break the server
   end
 
   def value(pid) do

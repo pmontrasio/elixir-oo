@@ -2,8 +2,8 @@ defmodule CounterTest do
   use ExUnit.Case
   doctest Counter
 
-  setup do
-    {:ok, counter} = Counter.start_link()
+  setup context do
+    {:ok, counter} = Counter.start_link(context.test)
     {:ok, counter: counter}
   end
 
