@@ -1,4 +1,4 @@
-# Counter
+# Elixir's object orientation
 
 This is both a Ruby and an Elixir project.
 
