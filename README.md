@@ -17,7 +17,7 @@ Actually this could be a more faithful to the original meaning of object orienta
 
 
 
-## Demo
+# Demo
 
 For the Ruby part
 
@@ -33,10 +33,17 @@ For the Elixir part
 
 ```demo.exs``` will terminate with an error. That's part of the demo. Look at the code.
 
-## Code
+# Code
 
 Ruby class definition at ```counter.rb```. Elixir module definition at ```lib/counter.ex```.
 
 Demos with the equivalent statements in the other language in the comments: ```demo.rb``` and ```demo.exs```.
 
 Ruby tests: ```spec/counter_spec.rb```. Elixir tests: ```tests/counter_test.exs```.
+
+
+# Next step
+
+    git checkout supervisor
+
+and read the README.
