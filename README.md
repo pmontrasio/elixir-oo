@@ -1,4 +1,4 @@
-# Elixir's object orientation
+# Elixir's object orientation - Step 3
 
 This is both a Ruby and an Elixir project.
 
@@ -15,9 +15,14 @@ Actually this could be a more faithful to the original meaning of object orienta
 
 -- Alan Kay, one of fathers of object oriented programming, http://www.purl.org/stefan_ram/pub/doc_kay_oop_en
 
+# Step 3
 
+Step 2 added a supervisor process to restart the counter when it crashed. The supervisor was created and started manually.
+In this step we show how to start it automatically by adding it to the definition of the Elixir application.
 
-## Demo
+To go back to step 2 ```git checkout supervisor```.
+
+# Demo
 
 For the Ruby part
 
@@ -33,7 +38,7 @@ For the Elixir part
 
 ```demo.exs``` will terminate with an error. That's part of the demo. Look at the code.
 
-## Code
+# Code
 
 Ruby class definition at ```counter.rb```. Elixir module definition at ```lib/counter.ex```.
 
