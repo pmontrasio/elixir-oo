@@ -15,7 +15,9 @@ Actually this could be a more faithful to the original meaning of object orienta
 
 -- Alan Kay, one of fathers of object oriented programming, http://www.purl.org/stefan_ram/pub/doc_kay_oop_en
 
+> I might think, though I'm not quite sure if I believe this or not, but Erlang might be the only object oriented language because the 3 tenets of object oriented programming are that it's based on message passing, that you have isolation between objects and have polymorphism.
 
+-- Joe Armstrong, father of Erlang, http://www.infoq.com/interviews/johnson-armstrong-oop
 
 # Demo
 
